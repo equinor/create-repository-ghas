@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "create-repository-ghas"
+  description: Open Source project.
+  annotations:
+    github.com/project-slug: "equinor/create-repository-ghas"
+  # Links example (uncomment to use).  These will show up as useful links on the Component's page.  
+  # links is a sub item under metadata, at the same level as annotations, and provides a list of urls.
+  # https://backstage.io/docs/features/software-catalog/descriptor-format/#links-optional 
+  #
+  # links:
+  #   - url: 'https://backstage.io/'
+  #     title: 'Official Backstage documentation'
+spec:
+  type: service    # valid choices:  service | website | library | documentation
+  owner: "group:default/sw-enabling-team-developers"
+  lifecycle: experimental    # valid choices:  experimental | production | deprecated
