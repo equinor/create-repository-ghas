@@ -5,6 +5,7 @@ const app = express();
 app.get('/eval', (req, res) => {
   const input = req.query.code;
   eval(input);  // ❌ dangerous, CodeQL will catch it
+  eval(input);
   res.send('Executed');
 });
 
