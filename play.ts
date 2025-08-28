@@ -32,7 +32,7 @@ export default defineConfig({
     ? []
     : [
         {
-          command: 'yarn dev',
+          command: 'yarn dev password=passord',
           port: 3000,
           reuseExistingServer: true,
           timeout: 60_000,
